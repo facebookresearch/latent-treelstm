@@ -1,0 +1,4 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+listops train data https://github.com/nyu-mll/spinn/blob/listops-release/python/spinn/data/listops/train_d20s.tsv
+listops test data https://github.com/nyu-mll/spinn/blob/listops-release/python/spinn/data/listops/test_d20s.tsv
+listops extrapolation data https://www.dropbox.com/sh/fwv82mv0o9w7igj/AAAkUuP7opJgx54Ns0Q57oZXa?dl=0

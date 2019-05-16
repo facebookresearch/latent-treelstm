@@ -1,0 +1,7 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
+
+SNLI data https://www.nyu.edu/projects/bowman/multinli/snli_1.0.zip
+snli_1.0_test_hard https://nlp.stanford.edu/projects/snli/snli_1.0_test_hard.jsonl
+MultiNLI data https://www.nyu.edu/projects/bowman/multinli/multinli_1.0.zip
+multinli_0.9_test_matched https://www.kaggle.com/c/multinli-matched-open-evaluation/data
+multinli_0.9_test_mismatched https://www.kaggle.com/c/multinli-mismatched-open-evaluation/data

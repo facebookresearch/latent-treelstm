@@ -1,0 +1,8 @@
+# Copyright (c) Facebook, Inc. and its affiliates. All Rights Reserved
+
+torch>=1.0.1
+numpy>=1.16.2
+tensorboardX>=1.6
+nltk>=3.4
+torchtext>=0.3.1
+h5py>=2.9.0
