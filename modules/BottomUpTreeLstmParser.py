@@ -21,7 +21,7 @@ class BottomUpTreeLstmParser(BinaryTreeBasedModule):
         super().reset_parameters()
         nn.init.normal_(self.q, mean=0, std=0.01)
 
-    def forward(self, x, mask, relaxed=False, tau_weights=None, straight_through=False, noise=None, ev_actions=None):
+    def forward(self, x, mask, relaxed=False, tau_weights=None, straight_through=False, noise=None, eval_actions=None):
         if relaxed is False and (straight_through is True or tau_weights is not None):
             raise ValueError("(straight_through == True or tau_weights is not None) and relaxed == False are mutually "
                              "exclusive values!")
@@ -36,7 +36,7 @@ class BottomUpTreeLstmParser(BinaryTreeBasedModule):
         h, c = self._transform_leafs(x, mask)
         for i in range(1, x.shape[1]):
             noise_i = None if noise is None else noise[i - 1]
-            ev_actions_i = None if ev_actions is None else ev_actions[i - 1]
+            ev_actions_i = None if eval_actions is None else eval_actions[i - 1]
             cat_distr, gumbel_noise_i, actions_i, h, c = self._make_step(h, c, mask[:, i:], relaxed, tau_weights,
                                                                          straight_through, noise_i, ev_actions_i)
             probs.append(cat_distr.probs)
