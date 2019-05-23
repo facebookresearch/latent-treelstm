@@ -8,4 +8,3 @@ from modules.BinaryTreeLstmCell import BinaryTreeLstmCell
 from modules.BinaryTreeBasedModule import BinaryTreeBasedModule
 from modules.BinaryTreeLstmRnn import BinaryTreeLstmRnn
 from modules.BottomUpTreeLstmParser import BottomUpTreeLstmParser
-from modules.SgdParameterModifier import SgdParameterModifier
